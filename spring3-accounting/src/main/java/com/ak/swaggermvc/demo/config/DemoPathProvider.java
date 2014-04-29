@@ -32,11 +32,7 @@ public class DemoPathProvider implements SwaggerPathProvider {
 
     @Override
     public String getSwaggerDocumentationBasePath() {
-        return UriComponentsBuilder
-                .fromHttpUrl(getAppBasePath())
-                .pathSegment("api-docs/")
-                .build()
-                .toString();
+        return "/api-docs";
     }
 
     public void setDefaultSwaggerPathProvider(SwaggerPathProvider defaultSwaggerPathProvider) {
